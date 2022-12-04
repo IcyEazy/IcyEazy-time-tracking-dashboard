@@ -1,0 +1,347 @@
+body{
+    font-family: "Rubik";
+    font-weight: 300;
+    font-size: 1rem;
+    background-color: hsl(226, 43%, 10%);
+    color: white;
+}
+
+.container{
+    margin:  9.375rem 4.25rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile{
+    border-radius: 1rem;
+    background-color: hsl(235, 46%, 20%);
+    margin-right: 2.25rem;
+}
+
+.report{
+    margin-top: 1.825rem;
+}
+
+.profile-name-img{
+    border: 2px solid hsl(246, 80%, 60%);
+    border-radius: 1rem;
+    color: white;
+    background-color: hsl(246, 80%, 60%);
+    padding: 2.7rem 6.8rem 4.2rem 1.875rem;
+}
+
+.profile-name-img img{
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 5.5rem;
+}
+
+.name{
+    font-size: 1.875rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.durations{
+    color: hsl(235, 45%, 61%);
+    padding: 3.95rem 1.875rem;
+}
+
+.durations p:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.dur-col{
+    color: white;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.625rem;
+}
+
+.img-svg{
+    padding: 0 .8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    width: 12.37rem;
+    height: 11.625rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.img-act{
+    width: 5.625rem;
+    height: 5rem;
+}
+
+.title{
+    font-size: 1.125rem;
+}
+
+.work{
+    border-radius: 1rem;
+    background-color: hsl(15, 100%, 70%);
+}
+
+.play{
+    border-radius: 1rem;
+    background-color: hsl(195, 74%, 62%);
+    margin: 0 2.25rem;
+}
+
+.study{
+    border-radius: 1rem;
+    background-color: hsl(348, 100%, 68%);
+}
+
+.bottom{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.exercise{
+    border-radius: 1rem;
+    background-color: hsl(145, 58%, 55%);
+}
+
+.social{
+    border-radius: 1rem;
+    background-color: hsl(264, 64%, 52%);
+    margin: 0 2.25rem;
+}
+
+.self-care{
+    border-radius: 1rem;
+    background-color: hsl(43, 84%, 65%);
+}
+
+.activity{
+    border: 0.125rem solid hsl(235, 46%, 20%);
+    border-radius: .8rem;
+    padding: 1.5rem 1.5rem 1.875rem 1.5rem;
+    color: white;
+    background-color: hsl(235, 46%, 20%);
+    margin-top: 3.9rem;
+    z-index: 9;
+}
+
+.activity:hover{
+    cursor: pointer;
+    background-color: hsl(236, 43%, 26%);
+}
+
+.activity-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hours{
+    margin-top: -.9rem;
+    margin-right: 2.75rem;
+}
+
+.current{
+    font-size: 2.25rem;
+}
+
+.profile, .act{
+    width: 15.625rem;
+}
+
+.act{
+    position: relative;
+    height: 15.625rem;
+}
+
+.previous{
+    margin-top: -.625rem;
+    color: hsl(235, 45%, 61%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 900px) {
+    .container{
+        margin: 4rem .625rem;
+    }
+
+    .profile{
+        margin: 0 1rem 0 0;
+    }
+
+    .profile-name-img{
+        padding: 3.1rem 1rem;
+    }
+
+    .profile-name-img img{
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .durations{
+        padding: 3.5rem 1rem;
+    }
+
+    .play, .social{
+        margin: 0 1.425rem;
+    }
+
+    .hours{
+        margin: -1.7rem 0 0 0;
+    }
+
+    .profile, .act{
+        width: 10.375rem;
+    }
+    .activity{
+        padding: 1rem;
+    }
+    .box{
+        width: 8.145rem;
+        height: 11.625rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .bottom{
+        margin-top: 3.3rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .container{
+        margin: 4rem 1.125rem;
+        flex-direction: column;
+    }
+
+    .profile{
+        margin: 0 0 1.625rem 0;
+    }
+
+    .profile-name-img{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2.5rem;
+    }
+
+    .profile-name-img img{
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .name{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .durations{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 2.5rem;
+    }
+
+    .top, .bottom{
+        flex-direction: column;
+    }
+
+    .play, .social{
+        margin: 1.625rem 0;
+    }
+    .hours{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+    .profile, .act{
+        width: auto;
+    }
+    .box{
+        width: 24.7rem;
+        height: 9.5rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .bottom{
+        margin: 0;
+    }
+}
+
+@media (max-width: 375px) {
+    .container{
+        margin: 1rem .4375rem;
+        flex-direction: column;
+    }
+
+    .profile{
+        margin: 0 0 .325rem 0;
+    }
+
+    .profile-name-img{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem .5rem;
+    }
+
+    .profile-name-img img{
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .name{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .durations{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem .3rem;
+    }
+
+    .top, .bottom{
+        flex-direction: column;
+    }
+
+    .play, .social{
+        margin: 1.625rem 0;
+    }
+    .hours{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+    .profile, .act{
+        width: auto;
+    }
+    .box{
+        width: 23rem;
+        height: 9.5rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .bottom{
+        margin: 0;
+    }
+}

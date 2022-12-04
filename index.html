@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <div class="profile-name-img">
+        <img src="./images/image-jeremy.png" alt="jeremy">
+        <div class="report">
+          <p>Report for</p>
+          <p class="name"><span>Jeremy</span> <span>Robson</span></p>
+        </div>
+      </div> 
+      <div class="durations">
+        <p id="daily">Daily</p>
+        <p id="weekly">Weekly</p>
+        <p id="monthly">Monthly</p>
+      </div>
+    </div>
+
+    <div class="activities">
+      <div class="top">
+        <div class="work act">
+          <div class="img-svg box">
+            <span></span>
+            <img class="img-act" src="./images/icon-work.svg" alt="work">
+          </div>
+          <div class="activity box">
+            <div class="activity-title">
+              <p class="title">Work</p>
+              <img class="ellip" src="./images/icon-ellipsis.svg" alt="ellipsis">
+            </div>
+            <div class="hours">
+              <p class="current"><span class="current-hours"></span> hrs</p>
+              <p class="previous">Last Week - <span class="previous-hours"></span> hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="play act">
+          <div class="img-svg box">
+            <span></span>
+            <img class="img-act" src="./images/icon-play.svg" alt="play">
+          </div>
+          <div class="activity box">
+            <div class="activity-title">
+              <p class="title">Play</p>
+              <img class="ellip" src="./images/icon-ellipsis.svg" alt="ellipsis">
+            </div>
+            <div class="hours">
+              <p class="current"><span class="current-hours"></span> hrs</p>
+              <p class="previous">Last Week - <span class="previous-hours"></span> hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="study act">
+          <div class="img-svg box">
+            <span></span>
+            <img class="img-act" src="./images/icon-study.svg" alt="study">
+          </div>
+          <div class="activity box">
+            <div class="activity-title">
+              <p class="title">Study</p>
+              <img class="ellip" src="./images/icon-ellipsis.svg" alt="ellipsis">
+            </div>
+            <div class="hours">
+              <p class="current"><span class="current-hours"></span> hrs</p>
+              <p class="previous">Last Week - <span class="previous-hours"></span> hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="exercise act">
+          <div class="img-svg box">
+            <span></span>
+            <img class="img-act" src="./images/icon-exercise.svg" alt="exercise">
+          </div>
+          <div class="activity box">
+            <div class="activity-title">
+              <p class="title">Exercise</p>
+              <img class="ellip" src="./images/icon-ellipsis.svg" alt="ellipsis">
+            </div>
+            <div class="hours">
+              <p class="current"><span class="current-hours"></span> hrs</p>
+              <p class="previous">Last Week - <span class="previous-hours"></span> hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="social act">
+          <div class="img-svg box">
+            <span></span>
+            <img class="img-act" src="./images/icon-social.svg" alt="social">
+          </div>
+          <div class="activity box">
+            <div class="activity-title">
+              <p class="title">Social</p>
+              <img class="ellip" src="./images/icon-ellipsis.svg" alt="ellipsis">
+            </div>
+            <div class="hours">
+              <p class="current"><span class="current-hours"></span> hrs</p>
+              <p class="previous">Last Week - <span class="previous-hours"></span> hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="self-care act">
+          <div class="img-svg box">
+            <span></span>
+            <img class="img-act" src="./images/icon-self-care.svg" alt="self-care">
+          </div>
+          <div class="activity box">
+            <div class="activity-title">
+              <p class="title">Self Care</p>
+              <img class="ellip" src="./images/icon-ellipsis.svg" alt="ellipsis">
+            </div>
+            <div class="hours">
+              <p class="current"><span class="current-hours"></span> hrs</p>
+              <p class="previous">Last Week - <span class="previous-hours"></span> hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
+    Coded by <a href="#">Adigun Israel Collins</a>.
+  </div>
+
+  <script src="data.json" type="text/javascript"></script>
+  <script src="app.js" type="module"></script>
+</body>
+</html>
